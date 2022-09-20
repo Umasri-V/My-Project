@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register page</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body{
+            background-image: url("images/aa.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        input[type=text],input[type=password],input[type=email],input[type=number]{
+            border: 1px solid gray;
+            display: block;
+            border-radius: 24px;
+            width: 100%;
+            padding: 16px;
+            font-size: medium;
+        }
+        .form-group i{
+            position: relative;
+            left: 85%;
+            top: -25px;
+            display: none;
+        }
+        .glyphicon-remove{
+            color:red;
+        }
+        .glyphicon-ok{
+            color:green;
+        }
+    </style>
+</head>
+<nav class="navbar navbar-inverse navbar-fixed">
+    <div class="container-fluid">
+        <div class="navbar header">
+            <h1 style="color: darkturquoise"><span class="glyphicon glyphicon-home"></span> LadyBird-WebSolution</h1>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="Login.html" target="_blank" > <span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+        </ul>
+    </div>
+</nav>
+<body>
+
+<div class="container" style="margin-top: 37px">
+    <div class="row">
+        <div class="col-sm-4">
+                <form>
+                <div class="form-group">
+                    <label class="control-label" style="font-size: x-large">Register-form</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="fname" class="control-label" ><span class="glyphicon glyphicon-user"></span>   FirstName : </label>
+                    <input type="text" id="fname" name="Firstname" class="form-control" placeholder="FirstName" required >
+                    <i class="glyphicon glyphicon-ok u_ok"></i>
+                    <i class="glyphicon glyphicon-remove u_remove"></i>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="control-label"><span class="glyphicon glyphicon-envelope"></span>   Email :</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="you@gmail.com"required >
+                    <i class="glyphicon glyphicon-ok e_ok"></i>
+                    <i class="glyphicon glyphicon-remove e_remove"></i>
+                </div>
+                <div class="form-group">
+                    <label for="pno" class="control-label"> <span class="glyphicon glyphicon-phone"></span>   PhoneNo  :</label>
+                    <input type="number" id="pno" name="pno"  class="form-control" placeholder="Enter your number"required >
+                    <i class="glyphicon glyphicon-ok pn_ok"></i>
+                    <i class="glyphicon glyphicon-remove pn_remove"></i>
+                </div>
+                <div class="form-group">
+                    <label for="psw" class="control-label"> <span class="glyphicon glyphicon-eye-close"></span>	Password  : </label>
+                    <input type="password" id="psw" name="password" class="form-control" placeholder="Password" required>
+                    <i class="glyphicon glyphicon-ok p_ok"></i>
+                    <i class="glyphicon glyphicon-remove p_remove"></i>
+                </div>
+                <div class="form-group">
+                    <label for="cpsw" class="control-label"> <span class="glyphicon glyphicon-eye-close"></span>   Confirm-Password  : </label>
+                    <input type="password" id="cpsw" name="cpsw"  class="form-control" placeholder="Confirm password" required>
+                    <i class="glyphicon glyphicon-ok cp_ok"></i>
+                    <i class="glyphicon glyphicon-remove cp_remove"></i>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success" onclick="myFunction()"><span class="glyphicon glyphicon-registration-mark"></span>	Register </button>
+                    <script type="text/javascript" src="sample.js"></script>
+                </div>
+                </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body{
+            background-image: url("images/uu.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .form-group {
+            position: relative;
+            padding: 8px;
+        }
+        input[type=text],input[type=password]{
+            border: 1px solid gray;
+            display: block;
+            border-radius: 24px;
+            width: 100%;
+            padding: 16px;
+            font-size: medium;
+        }
+        .form-group i{
+            position: absolute;
+            top: 60%;
+            right: 6%;
+            display: none;
+        }
+        .glyphicon-remove{
+            color:red;
+        }
+        .glyphicon-ok{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed">
+    <div class="container-fluid">
+        <div class="navbar header">
+            <h1 style="color: darkorange">Welcome Back</h1>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="reset.html" target="_blank"> <span class="glyphicon glyphicon-lock"></span>  Forgot Password</a> </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container" style="margin-top: 70px">
+
+    <div class="row">
+        <div class="col-md-4">
+            <form>
+                <div class="form-group">
+                    <label class="control-label" style="font-size: x-large"><span class="glyphicon glyphicon-user"></span>   User Login</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="user" class="control-label" ><span class="glyphicon glyphicon-user"></span>   UserName  :</label>
+                    <input type="text" id="user" name="Username" class="form-control" placeholder="UserName" required>
+                    <i class="glyphicon glyphicon-ok u_ok"></i>
+                    <i class="glyphicon glyphicon-remove u_remove"></i>
+                </div>
+                <div class="form-group">
+                    <label for="pass" class="control-label"> <span class="glyphicon glyphicon-eye-close"></span>	Password  : </label>
+                    <input type="password" id="pass" name="password" class="form-control" placeholder="Password" required>
+                    <i class="glyphicon glyphicon-ok p_ok"></i>
+                    <i class="glyphicon glyphicon-remove p_remove"></i>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-warning " value="Login" onclick="myFunction()"> <span class="glyphicon glyphicon-ok-sign"></span>	Login</button>
+                    <script type="text/javascript" src="demo.js">
+
+                    </script>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

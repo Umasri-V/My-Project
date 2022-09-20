@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register form</title>
+    <style>
+        *{
+            text-align: center;
+            border-radius: 30px;
+            font-size: large;
+        }
+        body{
+            background-image: linear-gradient(indianred,orangered);
+        }
+        label {
+            width: 100px;
+            display: inline-block;
+            margin: 15px;
+        }
+        #main{
+            padding: 14px;
+        }
+        h1{
+            text-shadow: 2px 2px 4px mediumblue;
+            font-size: 40px;
+        }
+        .registerbtn{
+            cursor: pointer;
+            padding: 10px;
+            width:10%;
+            background-color: lightcoral;
+            margin-left: 7%;
+        }
+        .registerbtn:hover,.registerbtn:active{
+            background-color: tomato;
+            color: lightseagreen;
+        }
+        a{
+            background-color: darkorange;
+        }
+        input[type=text],input[type=password],[type=email],input[type=number]{
+            width: 20%;
+            padding: 10px;
+</head>
+</style>
+<body>
+<h1 style="color: hotpink">Register form</h1>
+<div id="main">
+
+    <p>Please fill in this form to create an account.</p><br>
+<form class="box">
+
+
+    <label for="fname">FirstName  : </label>
+    <input type="text" id="fname" name="Firstname" placeholder="FirstName" value="" required><br>
+
+
+    <label for="lname"> LastName  : </label>
+    <input type="text" id="lname" name="Lastname" placeholder="LastName"  value="" required><br>
+
+    <label for="email"> Email  : </label>
+    <input type="email" id="email" name="email" placeholder="you@gmail.com" value="" required><br>
+
+    <label for="pno">PhoneNo  : </label>
+    <input type="number" id="pno" name="pno" placeholder="Enter your number" value="" required><br>
+
+    <label for="psw">Password  : </label>
+    <input type="password" id="psw" name="password" placeholder="Password" value=""><br>
+
+    <label for="cpsw">Confirm-Password  : </label>
+    <input type="password" id="cpsw" name="cpsw" placeholder="Confirm password" value=""><br><br>
+
+    <button type="submit"  class="registerbtn">Register</button><br>
+</form>
+    <p>Already have an account? <a href="signin.html" target="_blank">Signin</a></p>
+</div>
+</body>
+</html>

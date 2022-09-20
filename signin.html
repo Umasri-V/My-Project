@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Signin form</title>
+    <style>
+        *{
+            text-align: center;
+            border-radius: 30px;
+            font-size: large;
+        }
+        body{
+            background-image: linear-gradient(skyblue,lightskyblue);
+        }
+        label{
+            display: inline-block;
+            margin: 10px 4px 4px 4px;
+            padding: 30px;
+        }
+        #sign{
+            padding: 90px;
+        }
+        h1{
+            text-shadow: 2px 2px 4px deeppink;
+            font-size: 40px;
+            padding: 30px;
+            text-align: center;
+        }
+        input[type=text],input[type=password]{
+            width: 20%;
+            padding: 10px;
+        }
+        .loginbtn{
+            cursor: pointer;
+            padding: 8px;
+            width: 8%;
+            background-color: darkgoldenrod;
+        }
+        .loginbtn:hover,.loginbtn:active{
+            background-color: lime;
+            color: darkred;
+        }
+        a{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+<h1 style="color: maroon ">Sign in</h1><br>
+
+<div id="sign">
+<form>
+
+        <label for="uname" >UserName:</label>
+        <input type="text" id="uname" name="username" placeholder="Enter your username" value="" required><br>
+
+        <label for="psw">PassWord:</label>
+        <input type="password" id="psw" name="password" placeholder="Enter your password" value="" required><br><br>
+
+   <!--     <input type="checkbox" value="RememberMe" id="rememberMe">
+        <label for="rememberMe">Remember me</label>-->
+
+        <button type="submit" class="loginbtn">Sign in</button><br><br>
+
+        <a href="forgotpassword.html" target="_blank">Forgot Password</a>
+</form>
+</div>
+</body>
+</html>

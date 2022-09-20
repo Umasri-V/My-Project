@@ -1,0 +1,87 @@
+/*body {
+    background-image: url("images/uu.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form{
+     padding: 30px 40px;
+ }
+
+.form-group{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input{
+    border: 2px solid gray;
+    display: block;
+    border-radius: 24px;
+    font-size: .8rem;
+    width: 100%;
+    padding: 20px;
+    font-size: medium;
+}
+
+.form input::placeholder{
+    background-color: deeppink;
+}
+
+.form-group i{
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    visibility: visible;
+}
+
+.form-group small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bolder;
+    font-size: 13px;
+    font-style: italic;
+    visibility: visible;
+}
+
+
+.form-group.success input{
+    border-color: lawngreen;
+}
+
+.form-group.error input{
+    border-color: red;
+}
+
+.form-group.error small{
+    color: hotpink;
+    visibility: visible;
+}
+.form-group.success i.ion-ios-checkmark{
+    visibility: visible;
+    color: lawngreen;
+}
+
+.form-group.error i.ion-android-alert{
+    visibility: visible;
+    color: red;
+}
+
+.form #submit{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.form #submit:hover{
+    background-color: #6441a5;
+}*/
